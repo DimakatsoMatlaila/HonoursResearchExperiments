@@ -1,0 +1,15 @@
+# <profile> <c2_ip>[,<c2_ip2>...]     (use * for the default applied to profiles not listed)
+# A flow is labelled malicious (1) if either endpoint is one of these IPs.
+# If a profile ends up with ZERO C2 flows, run:  bash data_pipeline/diagnose.sh <profile>
+# to list that profile's top talkers, then put the right IP here and re-run the labelling for it.
+*          13.246.195.48
+# jquery     13.246.195.48
+# mscrl      13.246.195.48
+# amazon     13.246.195.48
+# googledrive 13.246.195.48
+# ms-update  13.246.195.48
+# slack      13.246.195.48
+# trick-bot  13.246.195.48
+# zillow     13.246.195.48
+# dukes_apt29 13.246.195.48
+# havex      13.246.195.48

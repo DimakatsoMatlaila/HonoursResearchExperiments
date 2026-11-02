@@ -1,0 +1,62 @@
+{
+  "model": "Isolation Forest (unsupervised, benign-only training)",
+  "dataset": "internal",
+  "variant": "https",
+  "data": "/datasets/dmatlaila/c2_work/datasets/internal_dataset.csv",
+  "rows": 1547038,
+  "features": [
+    "duration",
+    "total_packets",
+    "total_bytes",
+    "pkts_a_to_b",
+    "pkts_b_to_a",
+    "bytes_a_to_b",
+    "bytes_b_to_a",
+    "mean_iat",
+    "std_iat",
+    "min_iat",
+    "max_iat",
+    "mean_pkt_size",
+    "std_pkt_size",
+    "min_pkt_size",
+    "max_pkt_size",
+    "is_http",
+    "tls_handshake",
+    "tcp_syn_count",
+    "tcp_fin_count",
+    "tcp_rst_count",
+    "tcp_psh_count",
+    "tcp_ack_count",
+    "mean_tcp_window"
+  ],
+  "dropped_constant_features": [
+    "is_tls",
+    "is_quic"
+  ],
+  "malicious_profiles": [
+    "amazon",
+    "dukes_apt29",
+    "googledrive",
+    "havex",
+    "jquery",
+    "ms-update",
+    "mscrl",
+    "slack",
+    "trick-bot",
+    "zillow"
+  ],
+  "profiles_without_c2": [],
+  "random_state": 1337,
+  "smoke": false,
+  "max_hours": 12.0,
+  "host": "mscluster157.ms.wits.ac.za",
+  "slurm_job_id": "77973",
+  "trees": 200,
+  "max_samples": 4096,
+  "yilmaz_subset": [
+    "mean_iat",
+    "std_iat",
+    "total_packets",
+    "iat_cv"
+  ]
+}

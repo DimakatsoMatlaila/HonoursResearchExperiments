@@ -1,0 +1,72 @@
+{
+  "name": "Trickbot Profile",
+  "http_config": {
+    "user_agent": "Mozilla/5.0 (compatible; MSIE 8.0; Windows NT 5.1; SLCC1; .NET CLR 1.1.4322)",
+    "headers": {
+      "Host": "203.150.19.63:443",
+      "Connection": "Keep-Alive",
+      "Cache-Control": "no-cache"
+    },
+    "server_headers": {
+      "Server": "nginx",
+      "Date": "Fri, 30 Jun 2017 13:08:47 GMT",
+      "Connection": "keep-alive"
+    }
+  },
+  "https_config": {
+    "certificate": {
+      "common_name": "203.150.19.63"
+    }
+  },
+  "reconnect_interval": 30000,
+  "jitter": 20,
+  "max_errors": 10,
+  "http_get": {
+    "path": "/",
+    "method": "GET",
+    "headers": {
+      "Host": "203.150.19.63:443",
+      "Connection": "Keep-Alive",
+      "Cache-Control": "no-cache"
+    },
+    "metadata": {
+      "type": "cookie",
+      "name": "Cookie",
+      "encoding": "base64url",
+      "prepend": "D007="
+    },
+    "server_headers": {
+      "Server": "nginx",
+      "Date": "Fri, 30 Jun 2017 13:08:47 GMT",
+      "Content-Type": "text/html",
+      "Connection": "keep-alive"
+    }
+  },
+  "http_post": {
+    "path": "/response.php",
+    "method": "POST",
+    "headers": {
+      "Content-Type": "multipart/form-data; boundary=----ZMZTCR"
+    },
+    "id": {
+      "type": "cookie",
+      "name": "Cookie",
+      "encoding": "base64url"
+    },
+    "output": {
+      "encoding": "base64",
+      "prepend": "----ZMZTCR\r\nContent-Disposition: form-data;name=\"sourcelink\"\r\n\r\n",
+      "append": "\r\n----ZMZTCR\r\nContent-Disposition: form-data;name=\"sourcequery\"\r\n\r\n----ZMZTCR"
+    },
+    "server_headers": {
+      "Server": "nginx",
+      "Date": "Fri, 30 Jun 2017 13:08:47 GMT",
+      "Content-Type": "text/html; charset=utf-8",
+      "Connection": "keep-alive"
+    }
+  },
+  "dns_config": {
+    "idle_resolver": "8.8.8.8",
+    "max_length": 235
+  }
+}

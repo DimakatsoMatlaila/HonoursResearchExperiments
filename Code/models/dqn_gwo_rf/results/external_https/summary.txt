@@ -1,0 +1,16 @@
+external_https
+rows=1532537 elapsed_h=3.40
+
+   held_out       f1  precision   recall  fpr_normal  roc_auc  n_selected
+     amazon 0.985472   0.985472 0.985472         0.0 0.999996          10
+dukes_apt29 0.832877   0.996721 0.715294         0.0 0.998653          11
+googledrive 0.987212   0.994845 0.979695         0.0 0.999979          14
+      havex 0.990291   0.992701 0.987893         0.0 1.000000          15
+     jquery 0.977556   1.000000 0.956098         0.0 0.999997          14
+  ms-update 0.997619   0.997619 0.997619         0.0 1.000000          12
+      mscrl 0.994382   0.997183 0.991597         0.0 0.999999          15
+      slack 0.991432   0.995086 0.987805         0.0 0.998773          14
+  trick-bot 1.000000   1.000000 1.000000         0.0 1.000000          15
+     zillow 0.988318   1.000000 0.976905         0.0 0.997677          12
+
+Features selected in EVERY fold: ['bytes_a_to_b', 'bytes_b_to_a', 'tcp_psh_count']

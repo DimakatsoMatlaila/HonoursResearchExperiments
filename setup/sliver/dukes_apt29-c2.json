@@ -1,0 +1,110 @@
+{
+  "settings": {
+    "min_files": 1,
+    "max_files": 2,
+    "min_paths": 1,
+    "max_paths": 2,
+    "stager_file_ext": ".json"
+  },
+  "implant_config": {
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko",
+    "chrome_base_version": 0,
+    "macos_version": "",
+    "nonce_query_args": "abcdefghijklmnopqrstuvwxyz",
+    "nonce_query_length": 4,
+    "nonce_mode": "",
+    "url_parameters": [],
+    "headers": [
+      {
+        "method": "",
+        "name": "Accept",
+        "value": "*/*",
+        "probability": 100
+      },
+      {
+        "method": "",
+        "name": "Connection",
+        "value": "Keep-Alive",
+        "probability": 100
+      },
+      {
+        "method": "",
+        "name": "Cache-Control",
+        "value": "no-cache",
+        "probability": 100
+      }
+    ],
+    "min_files": 1,
+    "max_files": 2,
+    "min_paths": 1,
+    "max_paths": 2,
+    "stager_file_extension": ".json",
+    "poll_file_extension": ".woff2",
+    "start_session_file_extension": ".woff2",
+    "session_file_extension": ".woff2",
+    "close_file_extension": ".woff2",
+    "path_segments": [
+      {
+        "is_file": false,
+        "segment_type": 3,
+        "value": "root"
+      },
+      {
+        "is_file": false,
+        "segment_type": 3,
+        "value": "time"
+      },
+      {
+        "is_file": false,
+        "segment_type": 3,
+        "value": "27"
+      },
+      {
+        "is_file": true,
+        "segment_type": 0,
+        "value": "jquery-3.3.1.min"
+      },
+      {
+        "is_file": true,
+        "segment_type": 1,
+        "value": "jquery-3.3.2.min"
+      },
+      {
+        "is_file": true,
+        "segment_type": 2,
+        "value": "jquery-3.3.1.min"
+      },
+      {
+        "is_file": true,
+        "segment_type": 3,
+        "value": "28"
+      }
+    ]
+  },
+  "server_config": {
+    "random_version_headers": false,
+    "headers": [
+      {
+        "method": "",
+        "name": "Accept",
+        "value": "*/*",
+        "probability": 100
+      },
+      {
+        "method": "",
+        "name": "Connection",
+        "value": "Keep-Alive",
+        "probability": 100
+      },
+      {
+        "method": "",
+        "name": "Cache-Control",
+        "value": "no-cache",
+        "probability": 100
+      }
+    ],
+    "cookies": [
+      "_cfuid"
+    ]
+  }
+}

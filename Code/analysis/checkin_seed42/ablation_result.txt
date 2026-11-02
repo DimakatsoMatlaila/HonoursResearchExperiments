@@ -1,0 +1,4 @@
+dukes_apt29 fold, RF (300 trees), seed 42, master dataset, mixed variant (test blocks = odd blocks of 20 time blocks of dukes_apt29 flows)
+setting                         c2_test  recall_all  checkin_test  recall_checkin  recall_other   fp   fpr
+without_dukes_in_training       454      0.656388    132           0.000000        0.925466       3    0.00001
+with_alternate_blocks_of_dukes  454      0.973568    132           0.969697        0.975155       0    0.00000

@@ -1,0 +1,172 @@
+{
+  "settings": {
+    "min_files": 1,
+    "max_files": 2,
+    "min_paths": 1,
+    "max_paths": 2,
+    "stager_file_ext": ".js"
+  },
+  "implant_config": {
+    "user_agent": "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)",
+    "chrome_base_version": 0,
+    "macos_version": "",
+    "nonce_query_args": "abcdefghijklmnopqrstuvwxyz",
+    "nonce_query_length": 4,
+    "nonce_mode": "",
+    "url_parameters": [],
+    "headers": [
+      {
+        "method": "",
+        "name": "Accept",
+        "value": "*/*",
+        "probability": 100
+      },
+      {
+        "method": "",
+        "name": "Accept-Language",
+        "value": "en-US",
+        "probability": 100
+      },
+      {
+        "method": "",
+        "name": "Connection",
+        "value": "close",
+        "probability": 100
+      }
+    ],
+    "min_files": 1,
+    "max_files": 2,
+    "min_paths": 1,
+    "max_paths": 2,
+    "stager_file_extension": ".js",
+    "poll_file_extension": ".js",
+    "start_session_file_extension": ".html",
+    "session_file_extension": ".json",
+    "close_file_extension": ".json",
+    "path_segments": [
+      {
+        "is_file": false,
+        "segment_type": 0,
+        "value": "messages"
+      },
+      {
+        "is_file": false,
+        "segment_type": 1,
+        "value": "api"
+      },
+      {
+        "is_file": false,
+        "segment_type": 2,
+        "value": "messages"
+      },
+      {
+        "is_file": false,
+        "segment_type": 3,
+        "value": "messages"
+      },
+      {
+        "is_file": true,
+        "segment_type": 0,
+        "value": "C0527B0NM"
+      },
+      {
+        "is_file": true,
+        "segment_type": 1,
+        "value": "api.test"
+      },
+      {
+        "is_file": true,
+        "segment_type": 2,
+        "value": "C0527B0NM"
+      },
+      {
+        "is_file": true,
+        "segment_type": 3,
+        "value": "DALBNSf25"
+      }
+    ]
+  },
+  "server_config": {
+    "random_version_headers": false,
+    "headers": [
+      {
+        "method": "",
+        "name": "Content-Type",
+        "value": "text/html; charset=utf-8",
+        "probability": 100
+      },
+      {
+        "method": "",
+        "name": "Connection",
+        "value": "close",
+        "probability": 100
+      },
+      {
+        "method": "",
+        "name": "Server",
+        "value": "Apache",
+        "probability": 100
+      },
+      {
+        "method": "",
+        "name": "X-XSS-Protection",
+        "value": "0",
+        "probability": 100
+      },
+      {
+        "method": "",
+        "name": "Strict-Transport-Security",
+        "value": "max-age=31536000; includeSubDomains; preload",
+        "probability": 100
+      },
+      {
+        "method": "",
+        "name": "Referrer-Policy",
+        "value": "no-referrer",
+        "probability": 100
+      },
+      {
+        "method": "",
+        "name": "X-Slack-Backend",
+        "value": "h",
+        "probability": 100
+      },
+      {
+        "method": "",
+        "name": "Pragma",
+        "value": "no-cache",
+        "probability": 100
+      },
+      {
+        "method": "",
+        "name": "Cache-Control",
+        "value": "private, no-cache, no-store, must-revalidate",
+        "probability": 100
+      },
+      {
+        "method": "",
+        "name": "X-Frame-Options",
+        "value": "SAMEORIGIN",
+        "probability": 100
+      },
+      {
+        "method": "",
+        "name": "Vary",
+        "value": "Accept-Encoding",
+        "probability": 100
+      },
+      {
+        "method": "",
+        "name": "X-Via",
+        "value": "haproxy-www-w6k7",
+        "probability": 100
+      }
+    ],
+    "cookies": [
+      "d",
+      "b",
+      "_ga",
+      "__ar_v4"
+    ]
+  }
+}

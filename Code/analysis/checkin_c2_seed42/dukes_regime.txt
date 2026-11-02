@@ -1,0 +1,14 @@
+dukes C2 flows: 850 check-in-like: 198 capture minutes: 508.5
+check-in-like first/last at 391.3 508.5 | other C2 first/last at 0.0 486.7
+C2 flows per 50-minute block (start minute, check-in-like, other):
+0 0 78
+50 0 86
+100 0 88
+150 0 78
+200 0 78
+250 0 90
+300 0 80
+350 14 58
+400 82 8
+450 84 8
+500 18 0

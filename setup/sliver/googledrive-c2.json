@@ -1,0 +1,152 @@
+{
+  "settings": {
+    "min_files": 1,
+    "max_files": 2,
+    "min_paths": 1,
+    "max_paths": 2,
+    "stager_file_ext": ".js"
+  },
+  "implant_config": {
+    "user_agent": "Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko",
+    "chrome_base_version": 0,
+    "macos_version": "",
+    "nonce_query_args": "abcdefghijklmnopqrstuvwxyz",
+    "nonce_query_length": 4,
+    "nonce_mode": "",
+    "url_parameters": [
+      {
+        "method": "",
+        "name": "u",
+        "value": "0",
+        "probability": 100
+      }
+    ],
+    "headers": [
+      {
+        "method": "",
+        "name": "Accept",
+        "value": "text/html,application/xml;*/*;",
+        "probability": 100
+      },
+      {
+        "method": "",
+        "name": "Accept-Encoding",
+        "value": "gzip, deflate",
+        "probability": 100
+      }
+    ],
+    "min_files": 1,
+    "max_files": 2,
+    "min_paths": 1,
+    "max_paths": 2,
+    "stager_file_extension": ".js",
+    "poll_file_extension": ".js",
+    "start_session_file_extension": ".json",
+    "session_file_extension": ".json",
+    "close_file_extension": ".json",
+    "path_segments": [
+      {
+        "is_file": false,
+        "segment_type": 0,
+        "value": "viewerng"
+      },
+      {
+        "is_file": false,
+        "segment_type": 1,
+        "value": "viewersng"
+      },
+      {
+        "is_file": false,
+        "segment_type": 2,
+        "value": "viewerng"
+      },
+      {
+        "is_file": false,
+        "segment_type": 3,
+        "value": "viewersng"
+      },
+      {
+        "is_file": true,
+        "segment_type": 0,
+        "value": "meta"
+      },
+      {
+        "is_file": true,
+        "segment_type": 1,
+        "value": "meta"
+      },
+      {
+        "is_file": true,
+        "segment_type": 2,
+        "value": "meta"
+      },
+      {
+        "is_file": true,
+        "segment_type": 3,
+        "value": "meta"
+      }
+    ]
+  },
+  "server_config": {
+    "random_version_headers": false,
+    "headers": [
+      {
+        "method": "",
+        "name": "Content-Type",
+        "value": "application/json; charset=utf-8",
+        "probability": 100
+      },
+      {
+        "method": "",
+        "name": "Cache-Control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate",
+        "probability": 100
+      },
+      {
+        "method": "",
+        "name": "Pragma",
+        "value": "no-cache",
+        "probability": 100
+      },
+      {
+        "method": "",
+        "name": "Content-Disposition",
+        "value": "attachment; filename=\"json.txt\"; filename*=UTF-8''json.txt",
+        "probability": 100
+      },
+      {
+        "method": "",
+        "name": "X-Content-Type-Options",
+        "value": "nosniff",
+        "probability": 100
+      },
+      {
+        "method": "",
+        "name": "X-Frame-Options",
+        "value": "SAMEORIGIN",
+        "probability": 100
+      },
+      {
+        "method": "",
+        "name": "X-XSS-Protection",
+        "value": "1; mode=block",
+        "probability": 100
+      },
+      {
+        "method": "",
+        "name": "Server",
+        "value": "GSE",
+        "probability": 100
+      },
+      {
+        "method": "",
+        "name": "Connection",
+        "value": "close",
+        "probability": 100
+      }
+    ],
+    "cookies": [
+      "SID"
+    ]
+  }
+}

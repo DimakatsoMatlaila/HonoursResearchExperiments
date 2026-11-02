@@ -1,0 +1,154 @@
+{
+  "settings": {
+    "min_files": 1,
+    "max_files": 1,
+    "min_paths": 2,
+    "max_paths": 3,
+    "stager_file_ext": ".htm"
+  },
+  "implant_config": {
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36",
+    "chrome_base_version": 0,
+    "macos_version": "",
+    "nonce_query_args": "abcdefghijklmnopqrstuvwxyz",
+    "nonce_query_length": 4,
+    "nonce_mode": "",
+    "url_parameters": [
+      {
+        "method": "",
+        "name": "go",
+        "value": "Search",
+        "probability": 100
+      },
+      {
+        "method": "",
+        "name": "qs",
+        "value": "bs",
+        "probability": 100
+      },
+      {
+        "method": "",
+        "name": "shouldFireSellPageImplicitClaimGA",
+        "value": "false",
+        "probability": 100
+      }
+    ],
+    "headers": [
+      {
+        "method": "",
+        "name": "Accept",
+        "value": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "probability": 100
+      }
+    ],
+    "min_files": 1,
+    "max_files": 1,
+    "min_paths": 2,
+    "max_paths": 3,
+    "stager_file_extension": ".htm",
+    "poll_file_extension": ".htm",
+    "start_session_file_extension": ".htm",
+    "session_file_extension": ".htm",
+    "close_file_extension": ".htm",
+    "path_segments": [
+      {
+        "is_file": false,
+        "segment_type": 0,
+        "value": "homes"
+      },
+      {
+        "is_file": false,
+        "segment_type": 0,
+        "value": "for_sale"
+      },
+      {
+        "is_file": false,
+        "segment_type": 1,
+        "value": "homes"
+      },
+      {
+        "is_file": false,
+        "segment_type": 1,
+        "value": "for_sale"
+      },
+      {
+        "is_file": false,
+        "segment_type": 2,
+        "value": "homes"
+      },
+      {
+        "is_file": false,
+        "segment_type": 2,
+        "value": "atlanta"
+      },
+      {
+        "is_file": false,
+        "segment_type": 3,
+        "value": "homes"
+      },
+      {
+        "is_file": false,
+        "segment_type": 3,
+        "value": "atlanta"
+      },
+      {
+        "is_file": true,
+        "segment_type": 0,
+        "value": "index"
+      },
+      {
+        "is_file": true,
+        "segment_type": 1,
+        "value": "results"
+      },
+      {
+        "is_file": true,
+        "segment_type": 2,
+        "value": "search"
+      },
+      {
+        "is_file": true,
+        "segment_type": 3,
+        "value": "listing"
+      }
+    ]
+  },
+  "server_config": {
+    "random_version_headers": false,
+    "headers": [
+      {
+        "method": "",
+        "name": "Cache-Control",
+        "value": "no-cache",
+        "probability": 100
+      },
+      {
+        "method": "",
+        "name": "Content-Type",
+        "value": "text/html; charset=UTF-8",
+        "probability": 100
+      },
+      {
+        "method": "",
+        "name": "Vary",
+        "value": "Accept-Encoding",
+        "probability": 100
+      },
+      {
+        "method": "",
+        "name": "Server",
+        "value": "Apache-Coyote/1.1",
+        "probability": 100
+      },
+      {
+        "method": "",
+        "name": "Connection",
+        "value": "close",
+        "probability": 100
+      }
+    ],
+    "cookies": [
+      "AWSALB"
+    ]
+  }
+}

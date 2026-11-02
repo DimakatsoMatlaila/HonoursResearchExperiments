@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+logs/
+results_summary/
+results_seeds/
+models/*/results_serial/
+models/*/results_smoke*/
+models/*/results*/*/checkpoints/
+models/*/results*/*/figures/
+models/*/results*/*/train.log
+*.csv.gz
+*.pkl
+*.pt
+*.bin
+*.exe
+*.zip
+*.out

@@ -1,0 +1,43 @@
+dukes_apt29, https, seed 1337: C2 850, caught 610, missed 240 (recall 0.7176); score of missed flows: median 0.000, max 0.417
+
+Features where the MISSED flows look most like benign (small KS = same distribution):
+      feature  ks_missed_vs_benign  ks_caught_vs_benign  missed_in_benign_5_95
+tls_handshake                0.000                0.000                  1.000
+      is_http                0.001                0.001                  1.000
+ min_pkt_size                0.002                0.002                  1.000
+tcp_syn_count                0.072                0.015                  0.917
+ max_pkt_size                0.250                0.132                  1.000
+tcp_fin_count                0.258                0.248                  0.925
+tcp_rst_count                0.448                0.452                  0.967
+     mean_iat                0.704                0.678                  0.917
+
+Fraction of missed flows inside the benign 5-95 percentile band on ALL of the 5 most discriminative features ['mean_iat', 'max_iat', 'std_iat', 'duration', 'tcp_rst_count']: 0.917
+kNN (k=10, robust-scaled top-5 features): share of a missed flow's neighbours that are benign = 0.984
+same measure for CAUGHT flows (self excluded) = 0.050
+
+capture_side: missed vs caught counts
+              missed  caught
+capture_side                
+external         120     305
+internal         120     305
+
+proto: missed vs caught counts
+       missed  caught
+proto                
+tcp       240     610
+
+port_b: missed vs caught counts
+        missed  caught
+port_b                
+443        240     610
+
+http_method: missed vs caught counts
+Empty DataFrame
+Columns: [missed, caught]
+Index: []
+
+Seconds since the previous flow of the same host pair (beacon spacing):
+        count   mean    std   min    25%    50%    75%     max
+caught                                                        
+0       240.0  68.69  31.60  1.14  62.20  62.23  62.26  360.59
+1       608.0  73.24  17.77  0.14  66.19  76.03  82.74  151.41

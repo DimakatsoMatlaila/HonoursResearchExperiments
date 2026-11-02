@@ -1,0 +1,178 @@
+{
+  "settings": {
+    "min_files": 1,
+    "max_files": 1,
+    "min_paths": 2,
+    "max_paths": 3,
+    "stager_file_ext": ".php"
+  },
+  "implant_config": {
+    "user_agent": "Mozilla/5.0 (Windows; U; MSIE 7.0; Windows NT 5.2) Java/1.5.0_08",
+    "chrome_base_version": 0,
+    "macos_version": "",
+    "nonce_query_args": "abcdefghijklmnopqrstuvwxyz",
+    "nonce_query_length": 4,
+    "nonce_mode": "",
+    "url_parameters": [],
+    "headers": [
+      {
+        "method": "",
+        "name": "Referer",
+        "value": "http://www.google.com",
+        "probability": 100
+      },
+      {
+        "method": "",
+        "name": "Accept",
+        "value": "text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5",
+        "probability": 100
+      },
+      {
+        "method": "",
+        "name": "Accept-Language",
+        "value": "en-us,en;q=0.5",
+        "probability": 100
+      },
+      {
+        "method": "POST",
+        "name": "Content-Type",
+        "value": "application/octet-stream",
+        "probability": 100
+      }
+    ],
+    "min_files": 1,
+    "max_files": 1,
+    "min_paths": 2,
+    "max_paths": 3,
+    "stager_file_extension": ".php",
+    "poll_file_extension": ".php",
+    "start_session_file_extension": ".php",
+    "session_file_extension": ".php",
+    "close_file_extension": ".php",
+    "path_segments": [
+      {
+        "is_file": false,
+        "segment_type": 0,
+        "value": "include"
+      },
+      {
+        "is_file": false,
+        "segment_type": 0,
+        "value": "template"
+      },
+      {
+        "is_file": false,
+        "segment_type": 1,
+        "value": "wp06"
+      },
+      {
+        "is_file": false,
+        "segment_type": 1,
+        "value": "wp-includes"
+      },
+      {
+        "is_file": false,
+        "segment_type": 2,
+        "value": "wp08"
+      },
+      {
+        "is_file": false,
+        "segment_type": 2,
+        "value": "modules"
+      },
+      {
+        "is_file": false,
+        "segment_type": 3,
+        "value": "blog"
+      },
+      {
+        "is_file": false,
+        "segment_type": 3,
+        "value": "includes"
+      },
+      {
+        "is_file": false,
+        "segment_type": 3,
+        "value": "pomo"
+      },
+      {
+        "is_file": false,
+        "segment_type": 3,
+        "value": "phpmailer"
+      },
+      {
+        "is_file": true,
+        "segment_type": 0,
+        "value": "isx"
+      },
+      {
+        "is_file": true,
+        "segment_type": 0,
+        "value": "po"
+      },
+      {
+        "is_file": true,
+        "segment_type": 1,
+        "value": "dtcla"
+      },
+      {
+        "is_file": true,
+        "segment_type": 1,
+        "value": "mod_search"
+      },
+      {
+        "is_file": true,
+        "segment_type": 2,
+        "value": "src"
+      },
+      {
+        "is_file": true,
+        "segment_type": 2,
+        "value": "class.pop3"
+      },
+      {
+        "is_file": true,
+        "segment_type": 3,
+        "value": "class.pop3"
+      }
+    ]
+  },
+  "server_config": {
+    "random_version_headers": false,
+    "headers": [
+      {
+        "method": "",
+        "name": "Server",
+        "value": "Apache/2.2.26 (Unix)",
+        "probability": 100
+      },
+      {
+        "method": "",
+        "name": "X-Powered-By",
+        "value": "PHP/5.3.28",
+        "probability": 100
+      },
+      {
+        "method": "",
+        "name": "Cache-Control",
+        "value": "no-cache",
+        "probability": 100
+      },
+      {
+        "method": "",
+        "name": "Content-Type",
+        "value": "text/html",
+        "probability": 100
+      },
+      {
+        "method": "",
+        "name": "Keep-Alive",
+        "value": "timeout=3, max=100",
+        "probability": 100
+      }
+    ],
+    "cookies": [
+      "PHPSESSID"
+    ]
+  }
+}
